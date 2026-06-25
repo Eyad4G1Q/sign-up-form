@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Norse;
+    src: url("Norse-Bold.woff2");
+    font-weight: 400;
+}
+:root{
+    line-height: 1.1rem;
+    --min-width: 55vw; 
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    height: 100vh;
+    
+}
+#formed{
+    width: var(--min-width);
+}
+#background-imaged{
+    height:100%;
+    width: 45vw;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+fieldset{
+    display:flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 25%;
+    margin-bottom: 12px;
+}
+input{
+    display: block;
+    margin-bottom: 8px;
+    appearance: none;
+    border: 1px #E5E7EB solid;
+    border-radius: 4px;
+    height: 28px;
+    font-size: 1.1rem;
+}
+label{
+    text-transform: uppercase;
+}
+#containers{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+    font-family: Norse,sans-serif;
+    color: white;
+    font-size: 5rem;
+    align-items: center;
+    margin-top:55%;
+
+}
+#containers img{
+    height: 100px;
+    width: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(104, 237, 2);
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(19, 255, 19);
+}
+button{
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color:#596D48;
+    color:white;
+    padding: 8px 24px;
+}
+input:invalid{
+    border: red 1px solid;
+}
+/* form{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items:flex-start;
+} */
+ legend{
+    font-size:1.3em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    width: clamp(30ch,75ch);
+ }
+ #credit{
+    /* bottom:;
+     */
+     top:0;
+    background-color: rgba(0, 0,0,0 );
+    /* align-content: ; */
+    align-self: center;
+    color: rgb(144, 142, 142);
+}
+#credit a{
+    color: white;
+}
+input:focus{
+    
+    border: 1px lightblue solid;
+    box-shadow: 2px 2px 4px black;
+}
