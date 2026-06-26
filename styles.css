@@ -12,14 +12,22 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     display:flex;
     height: 100vh;
+    background-color: #eceef0;
     
 }
 #formed{
     width: var(--min-width);
+}
+legend , fieldset{
+    padding:20px 30px;
+}
+#hasacc,button{
+    margin: 12px 16px;
 }
 #background-imaged{
     height:100%;
@@ -37,6 +45,13 @@ fieldset{
     flex-flow: row wrap;
     gap: 25%;
     margin-bottom: 12px;
+    padding-top:2.5rem;
+    border:none;
+    /* border-radius: ; */
+    background-color: rgb(241, 246, 251);
+
+    box-shadow: 0px 0px 3px black;
+    position: relative;
 }
 input{
     display: block;
@@ -53,12 +68,12 @@ label{
 #containers{
     display: flex;
     justify-content: center;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
     font-family: Norse,sans-serif;
     color: white;
     font-size: 5rem;
     align-items: center;
-    margin-top:55%;
+    margin-top:40%;
 
 }
 #containers img{
@@ -80,6 +95,8 @@ button{
     background-color:#596D48;
     color:white;
     padding: 8px 24px;
+    align-self: flex-start;
+    margin-bottom: 8px;
 }
 input:invalid{
     border: red 1px solid;
@@ -93,6 +110,7 @@ input:invalid{
     font-size:1.3em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 30px;
+    /* line-height-step: 0.75rem; */
     width: clamp(30ch,75ch);
  }
  #credit{
@@ -111,4 +129,26 @@ input:focus{
     
     border: 1px lightblue solid;
     box-shadow: 2px 2px 4px black;
+}
+form{
+    
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+span{
+    display:inline;
+    font-style: italic;
+}
+input:focus-within{
+    outline: rgb(188, 231, 246);
+    box-shadow: 0 0 3px rgb(154, 213, 117);
+}
+#forced-block{
+    display:inline-block;
+    position:absolute;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.2rem;
+    top:3%;
 }
